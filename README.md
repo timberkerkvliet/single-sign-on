@@ -8,5 +8,5 @@ Suppose that for new services that we are going to write, we depend on an authen
 
 ### Kata
 
-* Part 1: Test-drive a fake implementation of `AuthenticationService` that we can use as test double (an implementation that satisfies the behaviour, but does not do any I/O).
+* Part 1: Test-drive a fake implementation of `AuthenticationService` that we can use as test double for our services (an implementation that satisfies the behaviour, but does not do any I/O).
 * Part 2: Write a (more) realistic implementation against the same tests (you can use file storage, sqllite, ...). Do you need additional tests?
