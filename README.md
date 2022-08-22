@@ -1,6 +1,6 @@
 For new services that we are going to write, we need to depend on a token registry as a dependency, to support single sign on. The services depend on the following behaviour of the token registry:
 
-* Provides a token when `login` is called and the given credentials are valid. If not, an exception is raised.
+* Provides a token when `login` is called and the given credentials are valid. If credentials are not valid, an exception is raised.
 * If there is already a valid token for a user when `login` is called, this token is re-used.
 * The token is valid until `invalidate_token` is called, with immediate effect.
 * By calling `is_valid_token` services get to know if a token is valid
