@@ -1,10 +1,15 @@
 from abc import ABC, abstractmethod
 from typing import NewType
 
+
 Token = NewType('Token', str)
 
 
-class TokenRegistry(ABC):
+class AuthenticationService(ABC):
+    @abstractmethod
+    def register_new_user(self, user: str, password: str) -> Token:
+        ...
+
     @abstractmethod
     def login(self, user: str, password: str) -> Token:
         ...
